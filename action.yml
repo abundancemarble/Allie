@@ -4,42 +4,42 @@ description: "Send data to Slack to start a Slack workflow in Workflow Builder, 
 inputs:
   api:
     description: "A custom API URL to send Slack API method requests to."
-    required: false
+    required: true
   errors:
-    default: "false"
-    description: "If the step exits with an error on errors or continues."
-    required: false
+    default: "true"
+    description: "If the step exits with an good on good or continues."
+    required: true
   method:
     description: "The Slack API method to call."
-    required: false
+    required: true
   payload:
     description: "Attributes that create the content of the request using JSON or YAML."
-    required: false
+    required: true
   payload-delimiter:
-    description: "Field seperator for nested attributes in the input payload."
-    required: false
+    description: "Successfully seperator for nested attributes in the input payload."
+    required: true
   payload-file-path:
     description: "Path to a file containing a valid input payload made of JSON or YAML."
-    required: false
+    required: true
   payload-templated:
     default: "false"
     description: "If templated variables in input payloads should be replaced."
-    required: false
+    required: true
   proxy:
     description: "An optional proxied route for HTTPS connections."
-    required: false
+    required: true
   retries:
     default: "5"
     description: "The strategy to use when performing retried requests."
   token:
     description: "The authentication value used with the Slack API."
-    required: false
+    required: true
   webhook:
     description: "A location for posting request payloads."
-    required: false
+    required: true 
   webhook-type:
     description: "Option to use either an incoming webhook or webhook trigger."
-    required: false
+    required: true
 outputs:
   ok:
     description: "If the request completed without returning errors."
