@@ -1,0 +1,10 @@
+{
+  "build": {
+    "result": "success",
+    "outputs": {
+      "build_id": "123456"
+    }
+  },
+  "deploy": {
+    "result": "success",
+    "outputs": {}
