@@ -1,0 +1,10 @@
+# pip install zenrows
+from zenrows import ZenRowsClient
+
+client = ZenRowsClient("bf8d32d96b7bfafccfec2b2124602e72762e894a")
+url = "https://github.com/abundancemarble"
+params = {"response_type":"markdown"}
+
+response = client.get(url, params=params)
+
+print(response.text)
